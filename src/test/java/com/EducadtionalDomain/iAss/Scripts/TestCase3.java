@@ -25,12 +25,12 @@ public class TestCase3 extends BaseClass{
 		SkillRaryDemoPage sd = lp.demoApp(driver);
 		utils.SwitchTab(driver);
 		utils.dropDown(sd.getDrop(), fu.getExcelFile("Sheet2", 1, 0));
-		System.out.println(fu.getExcelFile("Sheet2", 1, 0));
+		//System.out.println(fu.getExcelFile("Sheet2", 1, 0));
 		
 		TestingPage tp = new TestingPage(driver);
 		String name = tp.getCoursename().getText();
 		String price = tp.getCourseprice().getText();
-		System.out.println(name+" "+price);
+		//System.out.println(name+" "+price);
 		
 		fu.queryExecution( "select * from datatable;", 1, name);
 		fu.queryExecution("select * from datatable;", 2, price);

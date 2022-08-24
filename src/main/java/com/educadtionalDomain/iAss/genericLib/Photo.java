@@ -15,7 +15,7 @@ import org.openqa.selenium.WebDriver;
  */
 public class Photo {
 	/**
-	 * It is used to takke the screenshot of the failed testcases
+	 * It is used to take the screenshot of the failed testcases
 	 * @param driver
 	 * @param name
 	 * @return

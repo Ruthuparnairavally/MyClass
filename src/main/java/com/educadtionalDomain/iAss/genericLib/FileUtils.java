@@ -105,12 +105,6 @@ public class FileUtils  {
 	
 	public String queryExecution(String query, int column, String expdata) throws SQLException
 	{
-		//Driver driverrf = new Driver();
-		//DriverManager.registerDriver(driverrf);
-		//return con = DriverManager.getConnection("jdbc:mysql://localhost:3306/data","root","root");
-		//con = DriverManager.getConnection("jdbc:mysql://localhost:3306/data","root","root");
-		//Statement state = getData().createStatement();
-		//String query ="select * from datatable;";
 		Statement state = con.createStatement();
 		ResultSet res =  state.executeQuery(query);
 		
